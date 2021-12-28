@@ -9,11 +9,12 @@ body {
 #nav-bar {
     position: fixed;
     width: 100%;
-    padding: 10px;
-    background: #222538;
+    padding: 20px;
+    height: 70px;
     left: 0;
     top: 0;
     z-index: 999;
+    transition: all .5s ease-out;
 }
 #nav-bar ul {
     margin: 0;
@@ -33,6 +34,16 @@ body {
     line-height: 36px;
     color: #fff;
 }
+#nav-bar.scrolled {
+    height: 20px;
+    font-size:20px;
+    background: #4299E1;
+}
+#nav-bar.scrolled a {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
 .header-title {
     position: relative;
     font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
@@ -41,6 +52,13 @@ body {
     font-weight: bold;
     line-height: 1;
     margin: 0em 0 0.15em 0;
+}
+.fade {
+    animation: fadeIn 2s ease 0s;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1} 
 }
 .header-image {
     position: relative;

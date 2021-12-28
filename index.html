@@ -10,7 +10,7 @@
    <title>株式会社IPLoT</title>
 </head>
     <body>
-        <header id="nav-bar">
+        <header id="nav-bar" class="">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#vision">Vision</a></li>
@@ -20,7 +20,7 @@
         </header>
     
         <div class="header-image" id="home">
-          <h1 class="header-title">IPLoT</h1>
+          <h1 class="header-title fade">IPLoT</h1>
         </div>
     
         <div class="contents">
@@ -69,5 +69,18 @@
             <p>IPLoT, inc.©2021</p>
           </footer>
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            (function($) {
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() > 150) {
+                        $("#nav-bar").addClass("scrolled");
+                    } else {
+                        $("#nav-bar").removeClass("scrolled");
+                    }
+                });
+            })(jQuery);
+         </script>
     </body>
 </html>
