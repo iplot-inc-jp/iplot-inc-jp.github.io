@@ -61,13 +61,18 @@ body {
     100% {opacity: 1} 
 }
 .header-image {
+    position: relative;
+    z-index: 900;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     min-height: 600px;
-    background: url(../images/uomart_logo_image.png) no-repeat center;
-    background-size: contain;
+    padding: 2em 1em 4em;
+    text-align: center;
+    background: #181922 url(../images/top.jpg) no-repeat center center;
+    background-size: cover;
 }
 .header-image::before {
     content: "";
@@ -91,7 +96,7 @@ body {
 }
 .contents-footer{
     padding: 20px 0;
-    background: #3182CE;
+    background: #222538;
     font-family: "Yu Gothic", "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     width: 100%;
     color: white;
